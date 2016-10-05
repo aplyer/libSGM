@@ -14,4 +14,6 @@ SET(STEREOSRCS
 	cuda_utils.cu
 )
 
-CUDA_ADD_LIBRARY(sgm stereo_sgm.cpp ${STEREOSRCS} STATIC)
+#CUDA_ADD_LIBRARY(sgm stereo_sgm.cpp ${STEREOSRCS} STATIC)
+CUDA_ADD_LIBRARY(sgm stereo_sgm.cpp ${STEREOSRCS} SHARED)
+INSTALL(TARGETS sgm DESTINATION lib)

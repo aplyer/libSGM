@@ -19,6 +19,9 @@ add_subdirectory(src)
 add_subdirectory(sample/image)
 add_subdirectory(sample/movie)
 
+
+INSTALL(FILES include/libsgm.h DESTINATION include/ COMPONENT main)
+
 if(ENABLE_ZED_DEMO)
 	add_subdirectory(sample/zed)
 endif()
