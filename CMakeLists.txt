@@ -16,8 +16,8 @@ project(libSGM)
 
 add_subdirectory(src)
 
-add_subdirectory(sample/image)
-add_subdirectory(sample/movie)
+#add_subdirectory(sample/image)
+#add_subdirectory(sample/movie)
 
 
 INSTALL(FILES include/libsgm.h DESTINATION include/ COMPONENT main)
